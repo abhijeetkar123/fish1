@@ -1,0 +1,66 @@
+ <!DOCTYPE html>
+    <html lang="en">
+        <body bgcolor=#f49ac2></body>
+        <!-- <head> -->
+            
+             <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+            
+            
+               
+
+        <body>
+
+        <center>
+
+            <h1 style = "color: rgb(36, 31, 26);">  Fish Species Prediction  </h1><br>
+
+        
+        <form method="POST", action="{{url_for('new_home')}}">
+
+           
+
+        
+           <b> Weight: 
+            <input type="number", id ="Weight" , name='Weight',
+            min="1" max="2000", maxlength="4", required ><br>
+            <p style="color:rgb(52, 20, 128);"> <i>*Fill Values Between 1 to 2000 </i></p>
+
+            
+            Length1 :  <input    type="number", name='Length1',
+            min="1" max="80", required> <br>
+            <p style="color:rgb(52, 20, 128);"> <i>*Fill Values Between 1 to 80 </i></p>
+
+            Length2 :  <input type="number", name='Length2', 
+            min="1" max="80", required> <br>
+            <p style="color:rgb(52, 20, 128);"> <i>*Fill Values Between 1 to 80 </i></p>
+
+            Length3 : <input type="number", name='Length3', 
+            min="1" max="90", required> <br>
+            <p style="color:rgb(52, 20, 128);"> <i>*Fill Values Between 1 to 90 </i></p>
+
+            Height : <input type="number", name='Height', 
+            min="1" max="40", required> <br>
+            <p style="color:rgb(52, 20, 128);"> <i>*Fill Values Between 1 to 40 </i></p>
+
+            Width : <input type="number", name='Width', 
+            min="1" max="20", required>
+            <p style="color:rgb(52, 20, 128);"> <i>*Fill Values Between 1 to 40 </i></p> <br></b>
+
+             
+            
+
+            <input type="submit" , value='Predict!' >
+        
+        </form>
+
+        <!-- <img src='Static\med.jpg' alt="Diabetes"> -->
+        
+        
+    </center>
+
+        </body>
+    
+             
+</html>
